@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Seletores javascript</title>
+  </head>
+  <body>
+    <p></p>
+    <p class="paragrafo"></p>
+    <p id="paragrafoID"></p>
+    <script type="text/javascript">
+      document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
+      document.getElementsByTagName("p")[0].style.backgroundColor = "blue";
+      document.getElementsByTagName("p")[1].style.backgroundColor = "red";
+      var paragrafos = document.getElementsByTagName("p");
+      paragrafos[2].style.backgroundColor = "green";
+      document.getElementsByTagName("p")[0].innerHTML = "Primeiro parágrafo";
+      document.getElementsByClassName("paragrafo")[0].innerHTML = "Segundo parágrafo";
+      document.getElementById('paragrafoID').innerHTML = 'Terceiro parágrafo';
+    </script>
+  </body>
+</html>
