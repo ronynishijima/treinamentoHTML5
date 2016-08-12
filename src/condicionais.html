@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Condicionais</title>
+    <script type="text/javascript">
+      function verificaIdade(){
+        var _idade = document.getElementById("idade").value;
+        if(_idade >= 18){
+          alert("Maior");
+        } else {
+          alert("Menor");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Idade:<br>
+    <input id="idade"  type="text" name="texto" value="16"><br>
+    <input type="button" name="botao" value="Verifica Idade" onclick="verificaIdade()">
+  </body>
+</html>
