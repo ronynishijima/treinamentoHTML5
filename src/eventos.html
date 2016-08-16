@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eventos</title>
+    <script type="text/javascript">
+      function acender(){
+        document.getElementById("imagem").src = "acesa.gif";
+      }
+      function apagar(){
+        document.getElementById("imagem").src = "apagada.gif";
+      }
+
+    </script>
+  </head>
+  <body>
+    <center><img src="apagada.gif" alt="" id="imagem" onmouseover="acender()" onmouseout="apagar()"/></center>
+  </body>
+</html>
