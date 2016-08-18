@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src='../lib/angular.js'></script>
+    <script type="text/javascript">
+      angular.module("carro", []);
+      angular.module("carro").controller("carroCtrl", function($scope){
+        $scope.title = "Carrros";
+        $scope.contatos = [
+            {nome:'Rony Nishijima', telefone:91775622},
+            {nome:'Tiago Braz', telefone:9234524},
+            {nome:'Fernando Staroski', telefone:8345245}
+        ];
+      })
+    </script>
+  </head>
+  <body ng-controller="carroCtrl">
+
+  </body>
+</html>
